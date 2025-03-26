@@ -68,10 +68,10 @@ class WebScreenLayout extends StatelessWidget {
                         ),
                       ),
                       Expanded(
-                          child: Padding(
-                        padding: const EdgeInsets.only(left: 10.0, right: 15),
-                        child: TextField(
-                          decoration: InputDecoration(
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 10.0, right: 15),
+                          child: TextField(
+                            decoration: InputDecoration(
                               fillColor: searchBarColor,
                               filled: true,
                               hintText: 'Type Message',
@@ -79,9 +79,19 @@ class WebScreenLayout extends StatelessWidget {
                                 borderSide: const BorderSide(
                                     width: 0, style: BorderStyle.none),
                                 borderRadius: BorderRadius.circular(20),
-                              )),
+                              ),
+                              contentPadding: EdgeInsets.only(left: 20),
+                            ),
+                          ),
                         ),
-                      ))
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.mic,
+                          color: Colors.grey,
+                        ),
+                      ),
                     ],
                   ),
                 )
